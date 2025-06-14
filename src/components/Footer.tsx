@@ -1,4 +1,3 @@
-
 import { MessageCircle, Instagram, Twitter, Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
@@ -41,11 +40,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              <img 
-                src="/lovable-uploads/b0b59ade-b713-4ff1-a024-6f079b51369b.png" 
-                alt="Wabbie Logo" 
-                className="h-8 w-auto filter brightness-0 invert"
-              />
+              <h2 className="text-2xl font-bold text-white">Wabbie</h2>
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
               Empowering local restaurants with WhatsApp-based ordering. Zero commission, maximum profit.
