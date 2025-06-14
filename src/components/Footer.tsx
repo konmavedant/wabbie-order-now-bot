@@ -44,7 +44,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/b0b59ade-b713-4ff1-a024-6f079b51369b.png" 
                 alt="Wabbie Logo" 
-                className="h-8 w-auto brightness-0 invert"
+                className="h-8 w-auto filter brightness-0 invert"
               />
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
