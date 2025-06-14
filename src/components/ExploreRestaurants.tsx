@@ -15,7 +15,7 @@ const ExploreRestaurants = () => {
       rating: 4.5,
       deliveryTime: "25-30 min",
       distance: "1.2 km",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/e2dce993-699c-4ca9-86a1-a42c43eac62e.png",
       specialties: ["Butter Chicken", "Biryani", "Naan"],
       isOnline: true
     },
@@ -25,7 +25,7 @@ const ExploreRestaurants = () => {
       rating: 4.3,
       deliveryTime: "20-25 min",
       distance: "0.8 km",
-      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/0c45847a-4a4b-4ce4-8dd9-1eb605ff7d13.png",
       specialties: ["Carbonara", "Margherita", "Tiramisu"],
       isOnline: true
     },
@@ -35,7 +35,7 @@ const ExploreRestaurants = () => {
       rating: 4.7,
       deliveryTime: "15-20 min",
       distance: "0.5 km",
-      image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/0bb71a04-d27f-472b-aa1a-670c7763dbf4.png",
       specialties: ["Pav Bhaji", "Dosa", "Chaat"],
       isOnline: false
     },
@@ -45,7 +45,7 @@ const ExploreRestaurants = () => {
       rating: 4.4,
       deliveryTime: "30-35 min",
       distance: "1.5 km",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop",
+      image: "/lovable-uploads/e2dce993-699c-4ca9-86a1-a42c43eac62e.png",
       specialties: ["Salads", "Smoothies", "Quinoa Bowl"],
       isOnline: true
     }
