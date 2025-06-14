@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import HowItWorks from '@/components/HowItWorks';
 import WhyWabbie from '@/components/WhyWabbie';
+import BrandShowcase from '@/components/BrandShowcase';
 import ExploreRestaurants from '@/components/ExploreRestaurants';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import PricingSection from '@/components/PricingSection';
@@ -48,6 +49,7 @@ const Index = () => {
         <HeroSection />
         <HowItWorks />
         <WhyWabbie />
+        <BrandShowcase />
         <ExploreRestaurants />
         <TestimonialsSection />
         <PricingSection />
