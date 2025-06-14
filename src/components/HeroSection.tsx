@@ -101,110 +101,110 @@ const HeroSection = () => {
           {/* Right Content - iPhone Mockup */}
           <div className="flex justify-center lg:justify-end animate-slide-in-right">
             <div className="relative">
-              {/* iPhone Frame */}
-              <div className="relative bg-black rounded-[3rem] p-2 shadow-2xl">
-                {/* iPhone Screen */}
-                <div className="bg-white rounded-[2.5rem] overflow-hidden w-80 h-[650px] relative">
+              {/* iPhone Frame - Made smaller */}
+              <div className="relative bg-black rounded-[2.5rem] p-1.5 shadow-2xl">
+                {/* iPhone Screen - Made smaller */}
+                <div className="bg-white rounded-[2rem] overflow-hidden w-64 h-[520px] relative">
                   {/* iPhone Notch */}
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-black rounded-b-2xl z-20"></div>
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-5 bg-black rounded-b-xl z-20"></div>
                   
                   {/* Status Bar */}
-                  <div className="bg-[#075E54] pt-8 pb-2 px-4 flex justify-between items-center text-white text-sm">
+                  <div className="bg-[#075E54] pt-6 pb-1.5 px-3 flex justify-between items-center text-white text-xs">
                     <span className="font-medium">9:41</span>
                     <div className="flex items-center space-x-1">
-                      <div className="w-4 h-2 border border-white rounded-sm">
-                        <div className="w-3 h-1 bg-white rounded-sm"></div>
+                      <div className="w-3 h-1.5 border border-white rounded-sm">
+                        <div className="w-2.5 h-1 bg-white rounded-sm"></div>
                       </div>
                     </div>
                   </div>
 
                   {/* WhatsApp Header */}
-                  <div className="bg-[#075E54] px-4 pb-3 flex items-center justify-between">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center overflow-hidden">
+                  <div className="bg-[#075E54] px-3 pb-2 flex items-center justify-between">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center overflow-hidden">
                         <img 
-                          src="https://images.unsplash.com/photo-1566554273541-37a9ca77b91b?w=40&h=40&fit=crop&crop=face" 
-                          alt="Restaurant" 
+                          src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=32&h=32&fit=crop&crop=face" 
+                          alt="Wabbie" 
                           className="w-full h-full object-cover"
                         />
                       </div>
                       <div>
-                        <h3 className="text-white font-semibold text-lg">Raj's Kitchen</h3>
+                        <h3 className="text-white font-semibold text-sm">Wabbie</h3>
                         <p className="text-white/80 text-xs">online</p>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-4">
-                      <Video className="text-white w-6 h-6" />
-                      <Phone className="text-white w-6 h-6" />
-                      <MoreVertical className="text-white w-6 h-6" />
+                    <div className="flex items-center space-x-3">
+                      <Video className="text-white w-4 h-4" />
+                      <Phone className="text-white w-4 h-4" />
+                      <MoreVertical className="text-white w-4 h-4" />
                     </div>
                   </div>
                   
                   {/* Chat Messages */}
-                  <div className="bg-[#ECE5DD] h-full p-4 space-y-3 overflow-hidden">
+                  <div className="bg-[#ECE5DD] h-full p-3 space-y-2 overflow-hidden">
                     {/* Received Message */}
                     <div className="flex">
-                      <div className="bg-white rounded-lg rounded-bl-none p-3 max-w-xs shadow-sm">
-                        <p className="text-sm text-gray-800">नमस्ते! Raj's Kitchen में आपका स्वागत है 🍽️</p>
+                      <div className="bg-white rounded-lg rounded-bl-none p-2 max-w-xs shadow-sm">
+                        <p className="text-xs text-gray-800">नमस्ते! Wabbie में आपका स्वागत है 🍽️</p>
                         <p className="text-xs text-gray-500 mt-1">12:30</p>
                       </div>
                     </div>
                     
                     <div className="flex">
-                      <div className="bg-white rounded-lg rounded-bl-none p-3 max-w-xs shadow-sm">
-                        <p className="text-sm text-gray-800">आज का special menu देखिए और order करिए!</p>
+                      <div className="bg-white rounded-lg rounded-bl-none p-2 max-w-xs shadow-sm">
+                        <p className="text-xs text-gray-800">आज का special menu देखिए और order करिए!</p>
                         <p className="text-xs text-gray-500 mt-1">12:30</p>
                       </div>
                     </div>
 
                     {/* Sent Message */}
                     <div className="flex justify-end">
-                      <div className="bg-[#DCF8C6] rounded-lg rounded-br-none p-3 max-w-xs shadow-sm">
-                        <p className="text-sm text-gray-800">आज का special क्या है?</p>
+                      <div className="bg-[#DCF8C6] rounded-lg rounded-br-none p-2 max-w-xs shadow-sm">
+                        <p className="text-xs text-gray-800">आज का special क्या है?</p>
                         <p className="text-xs text-gray-500 mt-1 text-right">12:31 ✓✓</p>
                       </div>
                     </div>
 
                     {/* Menu Response */}
                     <div className="flex">
-                      <div className="bg-white rounded-lg rounded-bl-none p-3 max-w-xs shadow-sm">
-                        <div className="space-y-2">
-                          <p className="text-sm font-semibold text-gray-800">आज के Specials:</p>
-                          <div className="space-y-1">
-                            <p className="text-sm text-gray-800">🍛 Butter Chicken - ₹280</p>
-                            <p className="text-sm text-gray-800">🍝 Paneer Pasta - ₹180</p>
-                            <p className="text-sm text-gray-800">🥗 Fresh Salad - ₹150</p>
+                      <div className="bg-white rounded-lg rounded-bl-none p-2 max-w-xs shadow-sm">
+                        <div className="space-y-1">
+                          <p className="text-xs font-semibold text-gray-800">आज के Specials:</p>
+                          <div className="space-y-0.5">
+                            <p className="text-xs text-gray-800">🍛 Butter Chicken - ₹280</p>
+                            <p className="text-xs text-gray-800">🍝 Paneer Pasta - ₹180</p>
+                            <p className="text-xs text-gray-800">🥗 Fresh Salad - ₹150</p>
                           </div>
-                          <p className="text-xs text-gray-500 mt-2">12:32</p>
+                          <p className="text-xs text-gray-500 mt-1.5">12:32</p>
                         </div>
                       </div>
                     </div>
 
                     {/* Order Button */}
                     <div className="flex">
-                      <div className="bg-white rounded-lg rounded-bl-none p-3 max-w-xs shadow-sm">
-                        <button className="bg-[#25D366] text-white px-4 py-2 rounded-lg text-sm font-medium w-full">
+                      <div className="bg-white rounded-lg rounded-bl-none p-2 max-w-xs shadow-sm">
+                        <button className="bg-[#25D366] text-white px-3 py-1.5 rounded-lg text-xs font-medium w-full">
                           Order Now 🛒
                         </button>
-                        <p className="text-xs text-gray-500 mt-2">12:32</p>
+                        <p className="text-xs text-gray-500 mt-1.5">12:32</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Message Input Area */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#F0F0F0] p-2 flex items-center space-x-2">
-                    <div className="flex-1 bg-white rounded-full px-4 py-2 flex items-center">
-                      <span className="text-sm text-gray-500">Type a message...</span>
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#F0F0F0] p-1.5 flex items-center space-x-1.5">
+                    <div className="flex-1 bg-white rounded-full px-3 py-1.5 flex items-center">
+                      <span className="text-xs text-gray-500">Type a message...</span>
                     </div>
-                    <div className="w-10 h-10 bg-[#25D366] rounded-full flex items-center justify-center">
-                      <span className="text-white text-lg">🎤</span>
+                    <div className="w-8 h-8 bg-[#25D366] rounded-full flex items-center justify-center">
+                      <span className="text-white text-sm">🎤</span>
                     </div>
                   </div>
                 </div>
               </div>
               
               {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 bg-[#25D366] text-white p-2 rounded-full shadow-lg animate-bounce-gentle">
+              <div className="absolute -top-3 -right-3 bg-[#25D366] text-white p-1.5 rounded-full shadow-lg animate-bounce-gentle">
                 <span className="text-xs font-bold">LIVE</span>
               </div>
             </div>
