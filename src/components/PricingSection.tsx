@@ -1,6 +1,12 @@
 
 import { Button } from '@/components/ui/button';
 import { Check, Star } from 'lucide-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const PricingSection = () => {
   const plans = [
@@ -55,6 +61,29 @@ const PricingSection = () => {
       ],
       popular: false,
       setupFee: "Custom"
+    }
+  ];
+
+  const faqData = [
+    {
+      question: "Will Wabbie make my customers love me more than my mother-in-law does?",
+      answer: "Absolutely! Unlike your mother-in-law, Wabbie won't judge your cooking, criticize your restaurant decor, or ask why you haven't given her grandchildren yet. Your customers will actually enjoy talking to you through WhatsApp! 😄"
+    },
+    {
+      question: "Can I use Wabbie if my tech skills are equivalent to a potato?",
+      answer: "Hey, don't insult potatoes! They're actually quite sophisticated - they can be fries, chips, or even vodka! But yes, even if you think WiFi is a greeting and Bluetooth is a dental condition, our team will set up everything for you. You just need to know how to tap 'Send' on WhatsApp! 🥔"
+    },
+    {
+      question: "What happens if my customers order 100 biryanis at 2 AM?",
+      answer: "First, we'll be impressed by your dedication to late-night biryani service! Second, Wabbie will handle all 100 orders smoothly while you contemplate whether this is a blessing or a curse. Pro tip: Start preparing rice now, just in case! 🍛"
+    },
+    {
+      question: "Is Wabbie smarter than my teenage nephew who 'knows computers'?",
+      answer: "Well, your nephew might know how to make TikTok videos and play Fortnite, but can he automate your restaurant orders while you sleep? Wabbie won't ask for pocket money, won't leave dirty dishes around, and definitely won't use your WiFi to download 'educational' content! 🎮"
+    },
+    {
+      question: "Can Wabbie handle customers who change their mind more than the weather?",
+      answer: "Absolutely! Wabbie is like a patient waiter who never gets annoyed. Whether your customer wants extra cheese, then no cheese, then cheese on the side, then asks what cheese even is - Wabbie will handle it all with digital grace. We've programmed it to never roll its eyes! 🧀"
     }
   ];
 
@@ -142,37 +171,29 @@ const PricingSection = () => {
         {/* FAQ Section */}
         <div className="max-w-3xl mx-auto animate-fade-in-up">
           <h3 className="text-2xl font-bold text-center text-secondary mb-8">
-            Frequently Asked Questions
+            Frequently Asked Questions (But Make It Fun!) 🤔
           </h3>
           
-          <div className="space-y-6">
-            <div className="bg-gray-50 rounded-2xl p-6">
-              <h4 className="font-semibold text-secondary mb-2">
-                How does this compare to Swiggy/Zomato commission?
-              </h4>
-              <p className="text-secondary/70">
-                Traditional platforms charge 15-30% commission per order. With Wabbie, you pay a fixed monthly fee and keep 100% of your earnings. A restaurant doing ₹50,000/month saves ₹7,500-15,000 monthly!
-              </p>
-            </div>
-            
-            <div className="bg-gray-50 rounded-2xl p-6">
-              <h4 className="font-semibold text-secondary mb-2">
-                Do I need technical knowledge to set up?
-              </h4>
-              <p className="text-secondary/70">
-                Not at all! Our team handles the complete setup for you. We'll create your WhatsApp Business account, set up your menu, and train your staff. You'll be taking orders within 24 hours.
-              </p>
-            </div>
-            
-            <div className="bg-gray-50 rounded-2xl p-6">
-              <h4 className="font-semibold text-secondary mb-2">
-                Can I cancel anytime?
-              </h4>
-              <p className="text-secondary/70">
-                Yes, absolutely! There are no long-term contracts. You can cancel your subscription anytime with 30 days notice. We believe in earning your business every month.
-              </p>
-            </div>
-          </div>
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {faqData.map((faq, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`}
+                className="bg-white rounded-2xl shadow-lg border-0 overflow-hidden"
+              >
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline hover:bg-gray-50 transition-colors duration-300">
+                  <span className="font-semibold text-secondary pr-4">
+                    {faq.question}
+                  </span>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 pt-0">
+                  <p className="text-secondary/70 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
 
         {/* Bottom CTA */}
