@@ -121,11 +121,11 @@ const HeroSection = () => {
                   {/* WhatsApp Header */}
                   <div className="bg-[#075E54] px-3 pb-2 flex items-center justify-between">
                     <div className="flex items-center space-x-2">
-                      <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center overflow-hidden">
+                      <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center overflow-hidden">
                         <img 
-                          src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=32&h=32&fit=crop&crop=face" 
+                          src="/lovable-uploads/0bb71a04-d27f-472b-aa1a-670c7763dbf4.png" 
                           alt="Wabbie" 
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain p-0.5"
                         />
                       </div>
                       <div>
