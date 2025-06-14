@@ -69,10 +69,10 @@ const ExploreRestaurants = () => {
               <button
                 key={location}
                 onClick={() => setSelectedLocation(location)}
-                className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
+                className={`px-6 py-3 rounded-xl font-medium transition-all duration-200 ${
                   selectedLocation === location
-                    ? 'bg-primary text-white shadow-lg'
-                    : 'bg-gray-100 text-secondary hover:bg-gray-200'
+                    ? 'bg-primary text-white shadow-lg transform scale-105'
+                    : 'bg-gray-100 text-secondary hover:bg-gray-200 hover:scale-105'
                 }`}
               >
                 <MapPin className="inline-block w-4 h-4 mr-2" />
@@ -152,11 +152,11 @@ const ExploreRestaurants = () => {
 
                 {/* CTA Button */}
                 <Button 
-                  className={`w-full ${
+                  className={`w-full py-3 transition-all duration-200 ${
                     restaurant.isOnline
-                      ? 'bg-primary hover:bg-primary-dark text-white'
-                      : 'bg-gray-200 text-gray-500 cursor-not-allowed'
-                  } transition-all duration-300`}
+                      ? 'bg-primary hover:bg-primary-dark text-white shadow-md hover:shadow-lg'
+                      : 'bg-gray-200 text-gray-500 cursor-not-allowed opacity-60'
+                  }`}
                   disabled={!restaurant.isOnline}
                 >
                   <MessageCircle className="w-4 h-4 mr-2" />
@@ -174,10 +174,16 @@ const ExploreRestaurants = () => {
             We're onboarding amazing local restaurants every day. Want to see your favorite restaurant here? Ask them to join Wabbie!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" className="bg-white text-primary border-white hover:bg-gray-100">
+            <Button 
+              variant="outline" 
+              className="bg-white text-primary border-white hover:bg-gray-100 transition-all duration-200"
+            >
               Suggest a Restaurant
             </Button>
-            <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary">
+            <Button 
+              variant="outline" 
+              className="bg-transparent border-white text-white hover:bg-white hover:text-primary transition-all duration-200"
+            >
               List Your Restaurant
             </Button>
           </div>
