@@ -128,7 +128,7 @@ const GetStartedSection = () => {
               </div>
 
               {/* Primary CTA */}
-              <Button className="w-full bg-primary hover:bg-primary-dark text-white py-4 text-lg font-semibold rounded-xl mb-4 animate-pulse-glow">
+              <Button className="w-full bg-primary hover:bg-primary-dark text-white py-4 text-lg font-semibold rounded-xl mb-4 shadow-lg hover:shadow-xl transition-all duration-300">
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Start WhatsApp Setup
               </Button>
