@@ -123,7 +123,7 @@ const HeroSection = () => {
                     <div className="flex items-center space-x-2">
                       <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center overflow-hidden">
                         <img 
-                          src="/lovable-uploads/0bb71a04-d27f-472b-aa1a-670c7763dbf4.png" 
+                          src="/lovable-uploads/d409713c-84c8-4e43-bdf5-d1eba017cb68.png" 
                           alt="Wabbie" 
                           className="w-full h-full object-contain p-0.5"
                         />
