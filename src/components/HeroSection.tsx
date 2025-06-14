@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -97,45 +98,15 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Content - Phone Mockup */}
+          {/* Right Content - Mobile Image */}
           <div className="flex justify-center lg:justify-end animate-slide-in-right">
             <div className="relative">
-              {/* Phone Frame */}
-              <div className="bg-secondary rounded-3xl p-3 shadow-2xl">
-                <div className="bg-white rounded-2xl overflow-hidden w-80 h-[600px] relative">
-                  {/* WhatsApp Header */}
-                  <div className="bg-primary p-4 flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                      <span className="text-primary font-bold">R</span>
-                    </div>
-                    <div>
-                      <h3 className="text-white font-semibold">Raj's Kitchen</h3>
-                      <p className="text-white/80 text-sm">Online now</p>
-                    </div>
-                  </div>
-                  
-                  {/* Chat Messages */}
-                  <div className="p-4 space-y-3 bg-gray-50 h-full">
-                    <div className="bg-white p-3 rounded-lg shadow-sm max-w-xs">
-                      <p className="text-sm text-secondary">Hi! Welcome to Raj's Kitchen 🍽️</p>
-                    </div>
-                    <div className="bg-white p-3 rounded-lg shadow-sm max-w-xs">
-                      <p className="text-sm text-secondary">Check out our menu and place your order!</p>
-                    </div>
-                    <div className="bg-primary text-white p-3 rounded-lg shadow-sm max-w-xs ml-auto">
-                      <p className="text-sm">Show me today's specials</p>
-                    </div>
-                    <div className="bg-white p-3 rounded-lg shadow-sm max-w-xs">
-                      <div className="space-y-2">
-                        <p className="text-sm font-semibold text-secondary">Today's Specials:</p>
-                        <p className="text-sm text-secondary">🍛 Butter Chicken - ₹280</p>
-                        <p className="text-sm text-secondary">🍝 Pasta - ₹180</p>
-                        <p className="text-sm text-secondary">🥗 Caesar Salad - ₹150</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* Mobile Image */}
+              <img 
+                src="/lovable-uploads/508d4b71-a410-4781-a51f-cb620d5bdc05.png" 
+                alt="WhatsApp Food Ordering with Wabbie"
+                className="w-80 h-auto shadow-2xl rounded-3xl"
+              />
               
               {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 bg-primary text-white p-2 rounded-full shadow-lg animate-bounce-gentle">
